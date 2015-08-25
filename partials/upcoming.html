@@ -1,0 +1,16 @@
+<h1>Upcoming</h1>
+<div class="row">
+  <div class="col-md-4" ng-repeat="upcomingMovie in upcomingMovies | limitTo: 9">
+  	<div class="panel panel-info">
+  		 <div class="panel-heading">
+		    <h3 class="panel-title">{{upcomingMovie.title}}</h3>
+		 </div>
+		 <div class="panel-body movie-info">
+		 	<img src="http://image.tmdb.org/t/p/w500{{upcomingMovie.poster_path}}" style="max-width:100%;max-height:100%;">
+		 	<p>Description: {{upcomingMovie.overview}}</p>
+		   	<p>Release Date: {{upcomingMovie.release_date}}</p>
+		   	<p>Rating: {{upcomingMovie.vote_average}}</p>
+		 </div>
+  	</div>
+  </div>
+</div>
